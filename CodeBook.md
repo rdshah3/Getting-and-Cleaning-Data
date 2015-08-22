@@ -74,8 +74,8 @@ The test and training data were split into two directories. The files with prefi
 
 Transformations and Analysis
 -----------------------------------
-The "subject", "x", and "y" data were read into R and the test and training datasets were combined. After combining the datasets, the features, or column names, were appropriately named using the descriptive names within the `features.txt` file. 
+The "subject", "x", and "y" data were read into R and the test and training datasets were combined. After combining the datasets, the features, or column names, were appropriately named using the descriptive names within the `features.txt` file and assigned to the object `data`. 
 
-The `grep` command was used to obtain only the features that calcuated a mean or standard deviation. It was unclear if mean frequency was appropriate to keep within the processed dataset, so it remains as a feature in the tidy dataset. 
+The `grep` command was used to obtain only the features that calcuated a mean or standard deviation within `data` and assigned to the object `dataMeanStd`. It was unclear if mean frequency was appropriate to keep within the processed dataset, so it remains as a feature in the tidy dataset. 
 
 The resulting tidy dataset contains only the features that calculated a mean or standard deviation of a measurement, and further calculates the mean of each of the filtered features by subject and activity.
